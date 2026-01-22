@@ -54,6 +54,20 @@ p, li {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+.foto-cv-container {
+  text-align: center; /* centra la foto */
+  margin-bottom: 20px; /* spazio tra foto e contatti */
+}
+
+.foto-cv {
+  width: 150px;       /* larghezza */
+  height: 150px;      /* altezza */
+  border-radius: 50%; /* rende la foto circolare */
+  border: 2px solid #1e90ff; /* bordo blu elegante */
+  object-fit: cover;  /* ritaglia proporzioni mantenendo il viso al centro */
+}
+
 body.qr {
   display: flex;
   justify-content: center;
