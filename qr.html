@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>QR Code CV</title>
+
+  <!-- Google Font elegante corsivo -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <style>
     body.qr {
@@ -12,12 +16,14 @@
       align-items: center;
       height: 100vh;
       background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
+      font-family: 'Great Vibes', cursive; /* font elegante corsivo */
     }
 
     h2 {
       margin-bottom: 20px;
       color: #333;
+      font-size: 32px;
+      text-align: center;
     }
 
     #qrcode {
@@ -35,7 +41,7 @@
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://Elisa-183.github.io/cv-online/index.html", // il link al tuo CV
+      text: "https://Elisa-183.github.io/cv-online/index.html", // link al CV
       width: 200,
       height: 200,
       colorDark : "#007bff",   // colore blu scuro QR
