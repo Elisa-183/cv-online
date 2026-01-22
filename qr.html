@@ -4,16 +4,42 @@
   <meta charset="UTF-8">
   <title>QR Code CV</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body.qr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #qrcode {
+      padding: 20px;
+      background-color: #d7f3d7; /* verde pastello chiaro */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body class="qr">
+  <h2>Curriculum Vitae di Elisa Geri</h2>
   <div id="qrcode"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://Elisa-183.github.io/cv-online/index.html", // Cambia con il tuo link
+      text: "https://Elisa-183.github.io/cv-online/index.html", // il link al tuo CV
       width: 200,
-      height: 200
+      height: 200,
+      colorDark : "#007bff",   // colore blu scuro QR
+      colorLight : "#d7f3d7"   // sfondo verde pastello chiaro
     });
   </script>
 </body>
