@@ -74,3 +74,11 @@ body.qr {
   align-items: center;
   height: 100vh;
 }
+
+/* Nasconde elementi solo durante la stampa / PDF */
+@media print {
+  .download-btn {
+    display: none;
+  }
+}
+
